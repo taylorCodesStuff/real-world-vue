@@ -1,17 +1,15 @@
 <template>
-   <h1 @click="handler(arg, event)"></h1>
+    <div>
+
+    </div>
 </template>
 
 <script>
-export default {
-     data() {
-         return {
-             key: value
-         }
-     },
-}
+    export default {
+        
+    }
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 </style>
