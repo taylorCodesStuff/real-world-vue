@@ -3,16 +3,8 @@
         <div class="event-card -shadow">
             <span class="eyebrow">@{{ event.time }} on {{ event.date }}</span>
             <h4 class="title">{{ event.title }}</h4>
-            <!-- <BaseIcon name="users" /> -->
-            <font-awesome-icon icon="user-secret" />
-            <span>{{ event.attendees.length }} attending</span>
-            <ul 
-                v-for="person in event.attendees" 
-                :key="person.id"
-                id="attendees"
-            >
-                <li>{{ person.name }}</li>
-            </ul>
+            <i class="material-icons" id="person-icon">perm_identity</i>
+            <span id="attending"> {{ event.attendees.length }} attending</span>
         </div>
     </router-link>
 </template>
@@ -39,6 +31,15 @@
 </script>
 
 <style scoped>
+
+#person-icon {
+    font-size: 24px;
+}
+
+#attending {
+    font-size: 20px;
+    margin-left: 8px;
+}
 
 h4 {
     color: green;
