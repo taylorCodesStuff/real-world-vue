@@ -3,7 +3,7 @@
         <div class="event-card -shadow">
             <span class="eyebrow">@{{ event.time }} on {{ event.date }}</span>
             <h4 class="title">{{ event.title }}</h4>
-            <i class="material-icons" id="person-icon">perm_identity</i>
+            <i class="material-icons">supervisor_account</i>
             <span id="attending"> {{ event.attendees.length }} attending</span>
         </div>
     </router-link>
@@ -38,7 +38,6 @@
 
 #attending {
     font-size: 20px;
-    margin-left: 8px;
 }
 
 h4 {
