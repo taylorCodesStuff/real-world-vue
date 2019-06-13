@@ -1,6 +1,6 @@
 <template>
     <div>
-        <router-link to="/" class="brand">ICON</router-link>
+        <router-link to="/" class="brand">Home</router-link>
         <nav>
             <router-link :to="{ name: 'event-list' }">Event Listings</router-link>
             |
