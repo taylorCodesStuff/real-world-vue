@@ -1,6 +1,6 @@
 <template>
     <div>
-        <router-link to="/" class="brand">Real World Events</router-link>
+        <router-link to="/" class="brand"><i class="material-icons">perm_identity</i></router-link>
         <nav>
             <router-link :to="{ name: 'event-list' }">Event Listings</router-link>
             |
